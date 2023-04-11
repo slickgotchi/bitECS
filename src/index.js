@@ -1,5 +1,5 @@
 import { createWorld, resetWorld, deleteWorld, getWorldComponents, getAllEntities, enableManualEntityRecycling } from './World.js'
-import { addEntity, removeEntity, setDefaultSize, setRemovedRecycleThreshold, getEntityComponents, entityExists, flushRemovedEntities, resetGlobals } from './Entity.js'
+import { addEntity, removeEntity, setDefaultSize, setRemovedRecycleThreshold, getEntityComponents, entityExists, flushRemovedEntities, resetGlobals, getEntityCursor } from './Entity.js'
 import { defineComponent, registerComponent, registerComponents, hasComponent, addComponent, removeComponent } from './Component.js'
 import { defineSystem } from './System.js'
 import { defineQuery, enterQuery, exitQuery, Changed, Not, commitRemovals, resetChangedQuery, removeQuery } from './Query.js'
@@ -19,6 +19,8 @@ export const pipe = (...fns) => (input) => {
 export const Types = TYPES_ENUM
 
 export {
+
+  getEntityCursor,
 
   setDefaultSize,
   setRemovedRecycleThreshold,

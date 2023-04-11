@@ -1093,6 +1093,7 @@ export {
   flushRemovedEntities,
   getAllEntities,
   getEntityComponents,
+  getEntityCursor,
   getWorldComponents,
   hasComponent,
   parentArray,
