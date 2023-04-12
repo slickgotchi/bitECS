@@ -10,7 +10,7 @@ export const $entityArray = Symbol('entityArray')
 export const $entityIndices = Symbol('entityIndices')
 export const $removedEntities = Symbol('removedEntities')
 
-let defaultSize = 100000
+let defaultSize = 500 // reduced for testing
 
 // need a global EID cursor which all worlds and all components know about
 // so that world entities can posess entire rows spanning all component tables
