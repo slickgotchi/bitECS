@@ -95,6 +95,10 @@ declare module 'bitecs' {
   export type Serializer<W extends IWorld = IWorld> = (target: W | number[]) => ArrayBuffer
   export type Deserializer<W extends IWorld = IWorld> = (world: W, packet: ArrayBuffer, mode?: DESERIALIZE_MODE) => number[]
 
+  // slick exposed funcs
+  export function resetGlobals(): void
+  export function getEntityCursor(): number
+
   export function setDefaultSize(size: number): void
   export function setRemovedRecycleThreshold(newThreshold: number): void
   export function createWorld<W extends IWorld = IWorld>(obj?: W, size?: number): W
