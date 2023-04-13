@@ -554,7 +554,7 @@ var $entitySparseSet = Symbol("entitySparseSet");
 var $entityArray = Symbol("entityArray");
 var $entityIndices = Symbol("entityIndices");
 var $removedEntities = Symbol("removedEntities");
-var defaultSize = 500;
+var defaultSize = 1e5;
 var globalEntityCursor = 0;
 var globalSize = defaultSize;
 var getGlobalSize = () => globalSize;
